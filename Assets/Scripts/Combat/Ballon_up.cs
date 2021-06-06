@@ -14,6 +14,12 @@ public class Ballon_up : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector2(transform.position.x, transform.position.y + speed);
+        
+        transform.position = new Vector2(transform.position.x, transform.position.y + (speed * Time.deltaTime));
+
+        if(transform.position.y >= 8)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

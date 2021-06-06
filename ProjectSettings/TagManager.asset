@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background-1
+    uniqueID: 2725504849
+    locked: 0
+  - name: CombatItens
+    uniqueID: 4028534749
+    locked: 0
   - name: Background
     uniqueID: 1178516919
     locked: 0
