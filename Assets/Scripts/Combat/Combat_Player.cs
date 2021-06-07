@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Combat_Player : MonoBehaviour
 {
+
+    public float time;
+
+    public Text textTime;
+    public string sceneGameOver;
+
+    public string winScene;
 
     public Text life;
 
@@ -21,6 +29,7 @@ public class Combat_Player : MonoBehaviour
     void Update()
     {
         lifeupdate();
+        countdown();
         Vector2 vector = transform.position;
         if(Input.GetKey("right"))
         {
@@ -45,6 +54,16 @@ public class Combat_Player : MonoBehaviour
     
     }
 
+    private void countdown()
+    {
+        time -= Time.deltaTime;
+        textTime.text = Mathf.Round(time).ToString() + "s";
+        if(textTime.text.Equals("0s"))
+        {
+            SceneManager.LoadScene(winScene);
+        }
+
+    }
     private void lifeupdate()
     {
         life.text = lifeCount.ToString() + "x" ;
@@ -52,6 +71,10 @@ public class Combat_Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         lifeCount --;
+        if(lifeCount == 0)
+        {
+            SceneManager.LoadScene(sceneGameOver);
+        }
         
     }
 }
