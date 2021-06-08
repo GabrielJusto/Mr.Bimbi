@@ -12,9 +12,7 @@ public class DataController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-
-        SceneManager.LoadScene("PreCombat");
+     
     }
 
     // Update is called once per frame
@@ -31,5 +29,10 @@ public class DataController : MonoBehaviour
     public RoundData GetCurrentRoundData()
     {
         return allround[roundIndex];
+    }
+
+    private void Awake()
+    {
+    DontDestroyOnLoad(gameObject);
     }
 }

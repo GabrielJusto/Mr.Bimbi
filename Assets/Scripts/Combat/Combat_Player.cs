@@ -60,6 +60,7 @@ public class Combat_Player : MonoBehaviour
         textTime.text = Mathf.Round(time).ToString() + "s";
         if(textTime.text.Equals("0s"))
         {
+          
             SceneManager.LoadScene(winScene);
         }
 

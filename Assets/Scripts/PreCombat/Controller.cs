@@ -7,33 +7,59 @@ using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
+
+    private SceneLoad sceneLoad;
     public SimpleObjectPool optionButtonObjectPool;
     public Transform optionButtonParent;
     public GameObject panel;
+
+    public GameObject entirePanel;
     public string scene = "Combat";
 
     private DataController dataController;
     private RoundData currentRound;
     private PhaseData[] currentPhasePool;
 
-    private int phaseIndex;
-    //private bool activeRound;
+    private int phaseIndex = 0;
+    private bool activeRound;
     
-    private int currentPhaseNumber;
+    private int currentPhaseNumber = 0;
 
     private List<GameObject> optionsButtonsGameObjects = new List<GameObject>();
+
+
+    static Controller ImTheOne;
+
 
     // Start is called before the first frame update
     void Start()
     {
+       
+       
+        if(ImTheOne != null)
+        {
+            ImTheOne.panel.SetActive(true);
+            ImTheOne.entirePanel.SetActive(true);
+            ImTheOne.ShowOptions();
+            Destroy(this.gameObject);
+            return;
+        }
+
+        sceneLoad = new SceneLoad();
+       
         dataController = FindObjectOfType<DataController>();
         currentRound = dataController.GetCurrentRoundData();
-        currentPhasePool = currentRound.phases;
+        currentPhasePool = currentRound.phases; 
+        ImTheOne = this;
+        
+        GameObject.DontDestroyOnLoad(gameObject);
 
-        phaseIndex = 0;
-        currentPhaseNumber = 0;
-        showQuestion();
-        // //activeRound = True
+        ShowOptions();
+        
+
+      
+        
+        //activeRound = True
 
     }
 
@@ -41,15 +67,16 @@ public class Controller : MonoBehaviour
     void Update()
     {
 
-        
     }
 
-    private void showQuestion()
+    private void ShowOptions()
     {
+        
+       
         RemoveOptionsButtons();
 
         PhaseData phasedata = currentPhasePool[currentPhaseNumber];
-
+        
         for (int i = 0; i < phasedata.options.Length; i++)
         {
             GameObject optionButtonObject = optionButtonObjectPool.GetObject();
@@ -73,19 +100,25 @@ public class Controller : MonoBehaviour
         }
     }
 
+
     public void OptionClicked(bool rightOption)
     {
+        panel.SetActive(false);
+        entirePanel.SetActive(false);
         if(rightOption){
-            phaseIndex++;
+            currentPhaseNumber++;
         }
-        if(phaseIndex > currentPhasePool.Length){
-            phaseIndex = 0;
-            SceneManager.LoadScene("SampleScene");
-            showQuestion();
+        if(currentPhaseNumber >= currentPhasePool.Length){
+            Debug.Log("ENTROU");
+            currentPhaseNumber = 0;
+            sceneLoad.LoadScene("SampleScene");
         }else{
-            SceneManager.LoadScene(scene);
-            showQuestion();
+            
+            sceneLoad.LoadScene(scene);
+            ShowOptions();
         }
+        
+        
         
     }
 }
