@@ -7,6 +7,7 @@ public class OptionsButtons : MonoBehaviour
 {
 
     public Text textOption;
+    public Text description;
     private OptionData optionData;
 
     private Controller gameController;
@@ -26,6 +27,7 @@ public class OptionsButtons : MonoBehaviour
     public void Setup(OptionData data)
     {
         optionData = data;
+        description.text = optionData.description;
         textOption.text = optionData.OptionText;
     }
 
