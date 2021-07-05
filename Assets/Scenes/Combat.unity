@@ -6293,7 +6293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62f97e0589f44f408ce9a65715b7585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 15
   textTime: {fileID: 321119723}
   sceneGameOver: GameOver
   winScene: PreCombat
