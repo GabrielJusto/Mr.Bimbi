@@ -34,19 +34,26 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-       
+
+        
         if(ImTheOne != null)
         {
             ImTheOne.panel.SetActive(true);
             ImTheOne.entirePanel.SetActive(true);
             ImTheOne.ShowOptions();
+            Debug.Log(ImTheOne);
+            Debug.Log("Vou me destruir Ok?");
             Destroy(this.gameObject);
             return;
         }
 
+
+
+        Debug.Log("ENTROU Start");
+
         sceneLoad = new SceneLoad();
        
+
         dataController = FindObjectOfType<DataController>();
         currentRound = dataController.GetCurrentRoundData();
         currentPhasePool = currentRound.phases; 
@@ -67,20 +74,38 @@ public class Controller : MonoBehaviour
     void Update()
     {
 
+        if (optionButtonObjectPool == null)
+        {
+
+            optionButtonObjectPool = FindObjectOfType<SimpleObjectPool>();
+
+            //Debug.Log(optionButtonObjectPool);
+        }
+
     }
 
     private void ShowOptions()
     {
-        
-       
+        Debug.Log("ENTROU ShowOptions");
+
         RemoveOptionsButtons();
 
+        Debug.Log(currentPhaseNumber);
+        
+        if(optionButtonObjectPool == null)
+        {
+            optionButtonObjectPool = FindObjectOfType<SimpleObjectPool>();
+        }
         PhaseData phasedata = currentPhasePool[currentPhaseNumber];
         
         for (int i = 0; i < phasedata.options.Length; i++)
         {
+            //Debug.Log(phasedata.options[i]);
+            
+
             GameObject optionButtonObject = optionButtonObjectPool.GetObject();
 
+            Debug.Log(i+" "+phasedata.options.Length);
             optionButtonObject.transform.SetParent(optionButtonParent);
 
             optionsButtonsGameObjects.Add(optionButtonObject);
@@ -93,8 +118,10 @@ public class Controller : MonoBehaviour
 
     private void RemoveOptionsButtons()
     {
-        while(optionsButtonsGameObjects.Count > 0)
+        //Debug.Log("ENTROU RemoveOptionsButtons");
+        while (optionsButtonsGameObjects.Count > 0)
         {
+            
             optionButtonObjectPool.ReturnObject(optionsButtonsGameObjects[0]);
             optionsButtonsGameObjects.RemoveAt(0);
         }
@@ -103,6 +130,7 @@ public class Controller : MonoBehaviour
 
     public void OptionClicked(bool rightOption)
     {
+        Debug.Log("ENTROU OptionClicked");
         panel.SetActive(false);
         entirePanel.SetActive(false);
         if(rightOption){
@@ -111,6 +139,7 @@ public class Controller : MonoBehaviour
         if(currentPhaseNumber >= currentPhasePool.Length){
             Debug.Log("ENTROU");
             currentPhaseNumber = 0;
+            RemoveOptionsButtons();
             sceneLoad.LoadScene("SampleScene");
         }else{
             
