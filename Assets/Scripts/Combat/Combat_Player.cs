@@ -20,9 +20,14 @@ public class Combat_Player : MonoBehaviour
 
     private int lifeCount = 10;
     public float speed;
-
-    public BlinkigBody blink;
     private Color originalColor;
+
+    public float blink;
+    public float immuned;
+    public Renderer body;
+
+    private float blinkTime = 0.1f;
+    private float immunedTime;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +40,7 @@ public class Combat_Player : MonoBehaviour
     {
         lifeupdate();
         countdown();
+        ImmunedBlink();
         Vector2 vector = transform.position;
         if(Input.GetKey("right"))
         {
@@ -59,6 +65,25 @@ public class Combat_Player : MonoBehaviour
     
     }
 
+    private void ImmunedBlink()
+    {
+        if (immunedTime > 0)
+        {
+            immunedTime -= Time.deltaTime;
+
+            blinkTime -= Time.deltaTime;
+            if(blinkTime <= 0)
+            {
+                body.enabled = !body.enabled;
+
+                blinkTime = blink;
+            }
+            if (immunedTime <= 0)
+            {
+                body.enabled = true;
+            }
+        }
+    }
     private void countdown()
     {
         time -= Time.deltaTime;
@@ -76,13 +101,20 @@ public class Combat_Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        lifeCount --;
-        //blink.StartBlinking();
-
-        if (lifeCount == 0)
+        if (immunedTime <= 0)
         {
-            SceneManager.LoadScene(sceneGameOver);
+            lifeCount--;
+            if (lifeCount == 0)
+            {
+                SceneManager.LoadScene(sceneGameOver);
+            }
+            else
+            {
+                immunedTime = immuned;
+                body.enabled = false;
+
+                blinkTime = blink;
+            }
         }
-        
     }
 }

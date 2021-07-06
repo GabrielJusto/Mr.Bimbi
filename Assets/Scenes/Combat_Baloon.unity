@@ -6293,12 +6293,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62f97e0589f44f408ce9a65715b7585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 20
   textTime: {fileID: 321119723}
   sceneGameOver: GameOver
   winScene: PreCombat
   life: {fileID: 686268116}
   speed: 5
+  blink: 0.1
+  immuned: 2
+  body: {fileID: 574603512}
 --- !u!50 &574603515
 Rigidbody2D:
   serializedVersion: 4
