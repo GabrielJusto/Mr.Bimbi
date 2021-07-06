@@ -13,7 +13,6 @@ public class Controller : MonoBehaviour
     public Transform optionButtonParent;
     public GameObject panel;
 
-    public GameObject entirePanel;
     public string scene = "Combat";
 
     private DataController dataController;
@@ -39,7 +38,6 @@ public class Controller : MonoBehaviour
         if(ImTheOne != null)
         {
             ImTheOne.panel.SetActive(true);
-            ImTheOne.entirePanel.SetActive(true);
             ImTheOne.ShowOptions();
             Debug.Log(ImTheOne);
             Debug.Log("Vou me destruir Ok?");
@@ -132,7 +130,6 @@ public class Controller : MonoBehaviour
     {
         Debug.Log("ENTROU OptionClicked");
         panel.SetActive(false);
-        entirePanel.SetActive(false);
         if(rightOption){
             currentPhaseNumber++;
         }
