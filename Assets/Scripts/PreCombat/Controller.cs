@@ -13,7 +13,7 @@ public class Controller : MonoBehaviour
     public Transform optionButtonParent;
     public GameObject panel;
 
-    public string scene = "Combat";
+    public string[] scene = { "Combat", "Combat" , "Combat" };
 
     private DataController dataController;
     private RoundData currentRound;
@@ -39,12 +39,9 @@ public class Controller : MonoBehaviour
         {
             ImTheOne.panel.SetActive(true);
             ImTheOne.ShowOptions();
-            Debug.Log(ImTheOne);
-            Debug.Log("Vou me destruir Ok?");
             Destroy(this.gameObject);
             return;
         }
-
 
 
         Debug.Log("ENTROU Start");
@@ -77,18 +74,15 @@ public class Controller : MonoBehaviour
 
             optionButtonObjectPool = FindObjectOfType<SimpleObjectPool>();
 
-            //Debug.Log(optionButtonObjectPool);
         }
 
     }
 
     private void ShowOptions()
     {
-        Debug.Log("ENTROU ShowOptions");
 
         RemoveOptionsButtons();
 
-        Debug.Log(currentPhaseNumber);
         
         if(optionButtonObjectPool == null)
         {
@@ -98,12 +92,10 @@ public class Controller : MonoBehaviour
         
         for (int i = 0; i < phasedata.options.Length; i++)
         {
-            //Debug.Log(phasedata.options[i]);
             
 
             GameObject optionButtonObject = optionButtonObjectPool.GetObject();
 
-            Debug.Log(i+" "+phasedata.options.Length);
             optionButtonObject.transform.SetParent(optionButtonParent);
 
             optionsButtonsGameObjects.Add(optionButtonObject);
@@ -116,10 +108,9 @@ public class Controller : MonoBehaviour
 
     private void RemoveOptionsButtons()
     {
-        //Debug.Log("ENTROU RemoveOptionsButtons");
         while (optionsButtonsGameObjects.Count > 0)
         {
-            
+            Debug.Log(optionButtonObjectPool);
             optionButtonObjectPool.ReturnObject(optionsButtonsGameObjects[0]);
             optionsButtonsGameObjects.RemoveAt(0);
         }
@@ -128,19 +119,17 @@ public class Controller : MonoBehaviour
 
     public void OptionClicked(bool rightOption)
     {
-        Debug.Log("ENTROU OptionClicked");
         panel.SetActive(false);
         if(rightOption){
             currentPhaseNumber++;
         }
         if(currentPhaseNumber >= currentPhasePool.Length){
-            Debug.Log("ENTROU");
             currentPhaseNumber = 0;
             RemoveOptionsButtons();
             sceneLoad.LoadScene("SampleScene");
         }else{
             
-            sceneLoad.LoadScene(scene);
+            sceneLoad.LoadScene(scene[currentPhaseNumber-1]);
             ShowOptions();
         }
         

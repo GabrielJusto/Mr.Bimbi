@@ -10,6 +10,7 @@ public class Combat_Player : MonoBehaviour
 
     public float time;
 
+    
     public Text textTime;
     public string sceneGameOver;
 
@@ -19,10 +20,14 @@ public class Combat_Player : MonoBehaviour
 
     private int lifeCount = 10;
     public float speed;
+
+    public BlinkigBody blink;
+    private Color originalColor;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalColor = gameObject.GetComponent<Renderer>().material.color;
     }
 
     // Update is called once per frame
@@ -72,7 +77,9 @@ public class Combat_Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         lifeCount --;
-        if(lifeCount == 0)
+        //blink.StartBlinking();
+
+        if (lifeCount == 0)
         {
             SceneManager.LoadScene(sceneGameOver);
         }

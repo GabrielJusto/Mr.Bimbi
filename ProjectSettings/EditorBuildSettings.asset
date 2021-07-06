@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Combat.unity
+    path: Assets/Scenes/Combat_Baloon.unity
     guid: 98507c3f9cf73874ea72ae2f7498ee1a
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
