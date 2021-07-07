@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62f97e0589f44f408ce9a65715b7585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 20
+  time: 13
   textTime: {fileID: 513245999}
   sceneGameOver: GameOver
   winScene: PreCombat
@@ -6761,8 +6761,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942491306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4582, y: -16.2889, z: 0}
-  m_LocalScale: {x: 16.911173, y: 17.423008, z: 1}
+  m_LocalPosition: {x: -21.4582, y: -10.8878, z: 0}
+  m_LocalScale: {x: 16.911173, y: 28.225462, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -140121,7 +140121,7 @@ MonoBehaviour:
   - {fileID: 6894244117651876211, guid: 60a108c2a01295a4a8901a5201bd63b7, type: 3}
   - {fileID: 2905959005378677258, guid: 0d29797d751707e438779bae934787c3, type: 3}
   - {fileID: 2936948208686847908, guid: 29e62486adeee334db0d4c91b62f2e01, type: 3}
-  spawnTime: 0.5
+  spawnTime: 0.3
 --- !u!212 &1276655801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -140268,8 +140268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336549507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.43, y: -16.22, z: 0}
-  m_LocalScale: {x: 16.911173, y: 17.423008, z: 1}
+  m_LocalPosition: {x: 21.43, y: -12.4862, z: 0}
+  m_LocalScale: {x: 16.911173, y: 24.890509, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9

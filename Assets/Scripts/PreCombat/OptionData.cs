@@ -7,6 +7,7 @@ public class OptionData
 {
     public string OptionText;
     public string description;
+    public string text_phase;
 
     public bool control;
 }

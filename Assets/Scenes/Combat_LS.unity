@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: delay
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4418124855287391298, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4418124855508320367, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4
@@ -646,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4418124855287391298, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4418124855508320367, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -141445,7 +141449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62f97e0589f44f408ce9a65715b7585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 20
+  time: 13
   textTime: {fileID: 119095915}
   sceneGameOver: GameOver
   winScene: PreCombat
@@ -141627,6 +141631,10 @@ PrefabInstance:
     - target: {fileID: 4418124855287391298, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
       propertyPath: delay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418124855287391298, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
+      propertyPath: speed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4418124855508320367, guid: ada194b636ed9d649a2e94d84b2cc3b4, type: 3}
       propertyPath: m_LocalPosition.y

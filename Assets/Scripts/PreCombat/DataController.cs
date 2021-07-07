@@ -7,6 +7,8 @@ public class DataController : MonoBehaviour
 {
     public RoundData[] allround;
 
+    public CombatData[] combatData;
+
     private int roundIndex;
 
     // Start is called before the first frame update

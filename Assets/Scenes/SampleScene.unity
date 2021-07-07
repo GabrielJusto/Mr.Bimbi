@@ -410,7 +410,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1273981231
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 071b64c7517e626489fcfcd92cfb0b95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -589,6 +589,7 @@ GameObject:
   - component: {fileID: 850682775}
   - component: {fileID: 850682777}
   - component: {fileID: 850682776}
+  - component: {fileID: 850682778}
   m_Layer: 0
   m_Name: Butler
   m_TagString: Untagged
@@ -653,7 +654,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1409477111
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 4788448529197410327, guid: 2959881d5d806584e97d1ad9113da94a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -740,6 +741,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &850682778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850682771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94dc01d58c93f0409b5efa525bb4149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1133199756
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +973,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 850682771}
+    - target: {fileID: 6525221001725157278, guid: ab18cd42974367545b58e48c72124b40, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ab18cd42974367545b58e48c72124b40, type: 3}

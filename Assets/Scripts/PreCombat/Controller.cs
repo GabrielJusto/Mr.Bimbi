@@ -12,13 +12,16 @@ public class Controller : MonoBehaviour
     public SimpleObjectPool optionButtonObjectPool;
     public Transform optionButtonParent;
     public GameObject panel;
-
-    public string[] scene;
-    private int sceneControl = 0;
+    public Image clown;
+    public Image text_box;
+    public Text text_phase;
 
     private DataController dataController;
     private RoundData currentRound;
     private PhaseData[] currentPhasePool;
+
+    private CombatData[] combatData;
+    private int combatControl = 0;
 
     private int phaseIndex = 0;
     private bool activeRound;
@@ -38,21 +41,28 @@ public class Controller : MonoBehaviour
         
         if(ImTheOne != null)
         {
+            ImTheOne.text_phase.enabled = true;
+            ImTheOne.clown.enabled = true;
+            ImTheOne.text_box.enabled = true;
             ImTheOne.panel.SetActive(true);
             ImTheOne.ShowOptions();
             Destroy(this.gameObject);
             return;
         }
 
-
-        Debug.Log("ENTROU Start");
-
         sceneLoad = new SceneLoad();
-       
 
         dataController = FindObjectOfType<DataController>();
         currentRound = dataController.GetCurrentRoundData();
-        currentPhasePool = currentRound.phases; 
+        currentPhasePool = currentRound.phases;
+        combatData = dataController.combatData;
+
+        text_phase.text = combatData[combatControl].text_pre_Combat;
+
+        text_phase.enabled = true;
+        clown.enabled = true;
+        text_box.enabled = true;
+
         ImTheOne = this;
         
         GameObject.DontDestroyOnLoad(gameObject);
@@ -111,7 +121,6 @@ public class Controller : MonoBehaviour
     {
         while (optionsButtonsGameObjects.Count > 0)
         {
-            Debug.Log(optionButtonObjectPool);
             optionButtonObjectPool.ReturnObject(optionsButtonsGameObjects[0]);
             optionsButtonsGameObjects.RemoveAt(0);
         }
@@ -129,14 +138,18 @@ public class Controller : MonoBehaviour
             RemoveOptionsButtons();
             sceneLoad.LoadScene("SampleScene");
         }else{
-            
-            sceneLoad.LoadScene(scene[sceneControl]);
-            sceneControl++;
+            text_phase.enabled = false;
+            clown.enabled = false;
+            text_box.enabled = false;
+            string scene = combatData[combatControl].sceneName;
+            sceneLoad.LoadScene(scene);
+            combatControl++;
+            text_phase.text = combatData[combatControl].text_pre_Combat;
             ShowOptions();
         }
-        if(sceneControl == 4)
+        if(combatControl == 4)
         {
-            sceneControl = 0;
+            combatControl = 0;
         }
         
         
