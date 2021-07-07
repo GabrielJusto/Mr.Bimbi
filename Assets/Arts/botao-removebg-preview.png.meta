@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 0da29bd9879f1b545a34c9a2065f900c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6895890601730630718
+    second: botao-removebg-preview_0
+  - first:
+      213: 8268023803813352641
+    second: botao-removebg-preview_1
+  - first:
+      213: 4859691027440083429
+    second: botao-removebg-preview_2
+  - first:
+      213: 273728855830876893
+    second: botao-removebg-preview_3
+  - first:
+      213: 6967456389994259338
+    second: botao-removebg-preview_4
+  - first:
+      213: -7835851998461018213
+    second: botao-removebg-preview_5
+  - first:
+      213: 7396177752491568334
+    second: botao-removebg-preview_6
+  - first:
+      213: -4493547040356881905
+    second: botao-removebg-preview_7
+  - first:
+      213: -5785665971733833949
+    second: botao-removebg-preview_8
+  - first:
+      213: -3682025601093419940
+    second: botao-removebg-preview_9
+  - first:
+      213: -1105821641014640989
+    second: botao-removebg-preview_10
+  - first:
+      213: -2246250088490910028
+    second: botao-removebg-preview_11
+  - first:
+      213: -721386585659410095
+    second: botao-removebg-preview_12
+  - first:
+      213: -5347682011923863981
+    second: botao-removebg-preview_13
+  - first:
+      213: -8614630839926504200
+    second: botao-removebg-preview_14
+  - first:
+      213: 3606394697563274918
+    second: botao-removebg-preview_15
+  - first:
+      213: -4081872383794265306
+    second: botao-removebg-preview_16
+  - first:
+      213: 2142333942310008809
+    second: botao-removebg-preview_17
+  - first:
+      213: 128634498002966478
+    second: botao-removebg-preview_18
+  - first:
+      213: 7730727273237969973
+    second: botao-removebg-preview_19
+  - first:
+      213: 7976006353983213776
+    second: botao-removebg-preview_20
+  - first:
+      213: -630408151733396181
+    second: botao-removebg-preview_21
+  - first:
+      213: -3445056209612176882
+    second: botao-removebg-preview_22
+  - first:
+      213: -6435791685545233658
+    second: botao-removebg-preview_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: botao-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 330
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34eb1e57ff13bf50800000000000000
+      internalID: 6895890601730630718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 330
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4d4ccf7dbedb270800000000000000
+      internalID: 8268023803813352641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 330
+        width: 119
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e128b0ed37117340800000000000000
+      internalID: 4859691027440083429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 330
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2d290b1fa7cc300800000000000000
+      internalID: 273728855830876893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 330
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8322a9eba061b060800000000000000
+      internalID: 6967456389994259338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 330
+        width: 120
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f323f9f16714390800000000000000
+      internalID: -7835851998461018213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 241
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc28e0ba7084a660800000000000000
+      internalID: 7396177752491568334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 241
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a250e46c6b3a1c0800000000000000
+      internalID: -4493547040356881905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 242
+        width: 119
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3275db5d37f25bfa0800000000000000
+      internalID: -5785665971733833949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 242
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cbee85931d6ecc0800000000000000
+      internalID: -3682025601093419940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 242
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aef16e831557a0f0800000000000000
+      internalID: -1105821641014640989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 242
+        width: 120
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be3fc61277b3d0e0800000000000000
+      internalID: -2246250088490910028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 115
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159f900f8be1df5f0800000000000000
+      internalID: -721386585659410095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 115
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356288b1b8739c5b0800000000000000
+      internalID: -5347682011923863981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 115
+        width: 119
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f44e03b4eea27880800000000000000
+      internalID: -8614630839926504200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 115
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae7c14bedc7c0230800000000000000
+      internalID: 3606394697563274918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 115
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623477191b64a57c0800000000000000
+      internalID: -4081872383794265306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 115
+        width: 120
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e776a5be591bbd10800000000000000
+      internalID: 2142333942310008809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 26
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7d357f46009c100800000000000000
+      internalID: 128634498002966478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 26
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cf5c0fe7f094b60800000000000000
+      internalID: 7730727273237969973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 26
+        width: 120
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d09d6f258770be60800000000000000
+      internalID: 7976006353983213776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 26
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d9b6440275047f0800000000000000
+      internalID: -630408151733396181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 26
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0200da41a3b030d0800000000000000
+      internalID: -3445056209612176882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 26
+        width: 120
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603f9ae6f897fa6a0800000000000000
+      internalID: -6435791685545233658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,10 +10,15 @@ public class Catch : MonoBehaviour
 
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         catched = false;
+        player = GameObject.Find("Butler");
+        pickUp = GameObject.Find("pickUp");
+
     }
 
     // Update is called once per frame

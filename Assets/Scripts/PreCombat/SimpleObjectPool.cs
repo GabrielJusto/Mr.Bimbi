@@ -41,7 +41,6 @@ public class SimpleObjectPool : MonoBehaviour
 	public void ReturnObject(GameObject toReturn)
 	{
 		PooledObject pooledObject = toReturn.GetComponent<PooledObject>();
-
 		// if the instance came from this pool, return it to the pool
 		if (pooledObject != null && pooledObject.pool == this)
 		{

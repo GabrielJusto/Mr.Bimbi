@@ -77,28 +77,17 @@ public class Controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-        if (optionButtonObjectPool == null)
-        {
-
-            optionButtonObjectPool = FindObjectOfType<SimpleObjectPool>();
-
-        }
-
-    }
 
     private void ShowOptions()
     {
-
-        RemoveOptionsButtons();
-
         
         if(optionButtonObjectPool == null)
         {
             optionButtonObjectPool = FindObjectOfType<SimpleObjectPool>();
         }
+
+        RemoveOptionsButtons();
+
         PhaseData phasedata = currentPhasePool[currentPhaseNumber];
         
         for (int i = 0; i < phasedata.options.Length; i++)
@@ -130,7 +119,10 @@ public class Controller : MonoBehaviour
     public void OptionClicked(bool rightOption)
     {
         panel.SetActive(false);
-        if(rightOption){
+        text_phase.enabled = false;
+        clown.enabled = false;
+        text_box.enabled = false;
+        if (rightOption){
             currentPhaseNumber++;
         }
         if(currentPhaseNumber >= currentPhasePool.Length){
@@ -138,18 +130,17 @@ public class Controller : MonoBehaviour
             RemoveOptionsButtons();
             sceneLoad.LoadScene("SampleScene");
         }else{
-            text_phase.enabled = false;
-            clown.enabled = false;
-            text_box.enabled = false;
+            if (combatControl == combatData.Length)
+            {
+                combatControl = 0;
+            }
+
+            Debug.Log(combatControl);
             string scene = combatData[combatControl].sceneName;
             sceneLoad.LoadScene(scene);
             combatControl++;
             text_phase.text = combatData[combatControl].text_pre_Combat;
             ShowOptions();
-        }
-        if(combatControl == 4)
-        {
-            combatControl = 0;
         }
         
         
