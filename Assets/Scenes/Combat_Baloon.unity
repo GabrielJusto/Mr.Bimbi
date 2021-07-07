@@ -6254,7 +6254,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1409477111
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 3031405305068303910, guid: d6bfc64e4ba1f4d4d89b0d8178a143ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6298,7 +6298,7 @@ MonoBehaviour:
   sceneGameOver: GameOver
   winScene: PreCombat
   life: {fileID: 686268116}
-  speed: 5
+  speed: 7
   blink: 0.1
   immuned: 2
   body: {fileID: 574603512}
@@ -139891,7 +139891,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -607734717
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f930e7477a6283d4a86ae1cf99809811, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -140065,7 +140065,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1178516919
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

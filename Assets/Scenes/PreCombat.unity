@@ -441,9 +441,9 @@ MonoBehaviour:
   optionButtonParent: {fileID: 83480720}
   panel: {fileID: 1586635016}
   scene:
-  - Combat
-  - Combat
-  - Combat
+  - Combat_Baloon
+  - Combat_LS
+  - Combat_Surprise
 --- !u!1 &485848561
 GameObject:
   m_ObjectHideFlags: 0

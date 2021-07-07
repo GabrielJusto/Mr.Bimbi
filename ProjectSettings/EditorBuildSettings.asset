@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PreCombat.unity
     guid: 86e89dcb8164e9f448f68529a8ab1145
+  - enabled: 1
+    path: Assets/Scenes/Combat_LS.unity
+    guid: aa3ec25f6daef984ebf910ccd8e2e252
+  - enabled: 1
+    path: Assets/Scenes/Combat_Surprise.unity
+    guid: 76ec08669935276479fb9c8728b282f4
   m_configObjects: {}

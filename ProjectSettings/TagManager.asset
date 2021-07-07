@@ -47,6 +47,9 @@ TagManager:
   - name: CombatItens
     uniqueID: 4028534749
     locked: 0
+  - name: Cmbatitens2
+    uniqueID: 2915753003
+    locked: 0
   - name: Background
     uniqueID: 1178516919
     locked: 0

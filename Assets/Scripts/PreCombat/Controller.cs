@@ -13,7 +13,8 @@ public class Controller : MonoBehaviour
     public Transform optionButtonParent;
     public GameObject panel;
 
-    public string[] scene = { "Combat", "Combat" , "Combat" };
+    public string[] scene;
+    private int sceneControl = 0;
 
     private DataController dataController;
     private RoundData currentRound;
@@ -129,10 +130,14 @@ public class Controller : MonoBehaviour
             sceneLoad.LoadScene("SampleScene");
         }else{
             
-            sceneLoad.LoadScene(scene[currentPhaseNumber-1]);
+            sceneLoad.LoadScene(scene[sceneControl]);
+            sceneControl++;
             ShowOptions();
         }
-        
+        if(sceneControl == 4)
+        {
+            sceneControl = 0;
+        }
         
         
     }
