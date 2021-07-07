@@ -18,12 +18,23 @@ public class Catch : MonoBehaviour
     void Update()
     {
         
-        if(Mathf.Abs(transform.position.x - player.transform.position.x) < 0.3
-            && Mathf.Abs(transform.position.y - player.transform.position.y) < 0.3)
+        if(Mathf.Abs(transform.position.x - player.transform.position.x) < 1.2
+            && Mathf.Abs(transform.position.y - player.transform.position.y) <1.2
+            && Input.GetKeyDown("space"))
+        {
             catched = true;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        }
         
         if(catched)
+        { 
             transform.position = new Vector2(player.transform.position.x - 0.2f, player.transform.position.y - 0.2f);
+            if(Input.GetKeyDown("z"))
+            {
+                catched = false;
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+            }
+        }
 
         
     }
