@@ -8,11 +8,36 @@ public class CameraMoviment : MonoBehaviour
 
     public Transform butler;
 
+
     
     // Start is called before the first frame update
     void Start()
     {
+        float camera_x = transform.position.x;
+        float camera_y = transform.position.y;
         butler = GameObject.Find("Butler").transform;
+        if (butler.position.x > 6.9)
+        {
+            camera_x = 6.9f;
+        }
+
+        if (butler.position.y > 6.9)
+        {
+            camera_y = 6.9f;
+        }
+        // menos 
+        if (butler.position.x < -6.9)
+        {
+            camera_x = -6.9f;
+        }
+
+        if (butler.position.y < -6.9)
+        {
+            camera_y = -6.9f;
+        }
+
+        transform.position = new Vector3(camera_x, camera_y, -1);
+
     }
 
     // Update is called once per frame

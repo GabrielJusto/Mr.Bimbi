@@ -18,7 +18,7 @@ public class Combat_Player : MonoBehaviour
 
     public Text life;
 
-    private int lifeCount = 10;
+    private int lifeCount = 5;
     public float speed;
     private Color originalColor;
 

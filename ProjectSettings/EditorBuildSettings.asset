@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 13e1cd7b15227974c8733e11e9e62181
+  - enabled: 1
+    path: Assets/Scenes/tutorialPhase.unity
+    guid: ce75d06372f80b3428d2d962f5c6d473
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -23,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combat_Surprise.unity
     guid: 76ec08669935276479fb9c8728b282f4
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: dbddb0fd42e3d9a4195060ffa60c0f57
   m_configObjects: {}

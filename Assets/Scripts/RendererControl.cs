@@ -10,11 +10,11 @@ public class RendererControl : MonoBehaviour
     {
         foreach (string name in objects)
         {
-            
             if (!GameObject.Find(name).GetComponent<Renderer>().enabled)
             {
                 GameObject.Find(name).GetComponent<Renderer>().enabled = true;
             }
         }
+        GameObject.Find("Butler").GetComponent<MoveButler>().enabled = true;
     }
 }

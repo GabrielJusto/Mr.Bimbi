@@ -13,6 +13,6 @@ public class health_display : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lifeText.text = life.ToString();
+        //lifeText.text = life.ToString();
     }
 }

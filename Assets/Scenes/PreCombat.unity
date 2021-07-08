@@ -480,46 +480,46 @@ MonoBehaviour:
     phases:
     - phase: 1
       options:
-      - OptionText: A
-        description: 
-        text_phase: 
+      - OptionText: "Virar \xE0 Esquerda"
+        description: "Voc\xEA encara o Mr.Bimbo e na sua esquerda tem um corredor.
+          Voc\xEA decide ir por esse caminho?"
         control: 1
-      - OptionText: B
-        description: 
-        text_phase: 
+      - OptionText: Jogar Pedra
+        description: "Tem uma pilha de cascalhos no seu p\xE9, voc\xEA decide joga-los
+          no Mr.Bimbo?"
         control: 0
-      - OptionText: C
-        description: 
-        text_phase: 
+      - OptionText: "Virar \xE0 Direita"
+        description: A sua direita tem uma grade que te impede de passar. Decide
+          ir por esse caminho?
         control: 0
     - phase: 2
       options:
-      - OptionText: D
-        description: 
-        text_phase: 
+      - OptionText: Fazer Careta
+        description: "Depois de entrar no corredor, voc\xEA para e v\xEA Mr.Bimbo
+          te perseguindo. Decide fazer uma careta para assusta-lo?"
         control: 0
-      - OptionText: E
-        description: 
-        text_phase: 
-        control: 0
-      - OptionText: F
-        description: 
-        text_phase: 
+      - OptionText: Continuar Correndo
+        description: "Depois de entrar no corredor, voc\xEA se aproxima de um muro
+          baixo. Decide correr em dire\xE7\xE3o a ele? "
         control: 1
+      - OptionText: Jogar Caixas
+        description: "Depois de entrar no corredor. Decide derrubar caixas pequenas
+          para atrapalhar a persegui\xE7\xE3o?"
+        control: 0
     - phase: 3
       options:
-      - OptionText: G
-        description: 
-        text_phase: 
+      - OptionText: Xingar Mr.Bimbo
+        description: "Depois de chegar no pequeno muro, voc\xEA se virar. Decide
+          come\xE7ar a xingar a m\xE3e do Mr.Bimbo?"
         control: 0
-      - OptionText: H
-        description: 
-        text_phase: 
+      - OptionText: Dar soco no Muro
+        description: "Depois de chegar no pequeno muro. Decide socar o muro at\xE9
+          quebrar?"
+        control: 0
+      - OptionText: Pular Muro
+        description: Depois de chegar no pequeno muro. Ainda sem parar de correr.
+          Decide pular com toda velocidade por cima do muro?
         control: 1
-      - OptionText: I
-        description: 
-        text_phase: 
-        control: 0
   combatData:
   - sceneName: Combat_Baloon
     text_pre_Combat: "Mr.Bimbo est\xE1 enchendo bal\xF5es em uma velocidade impressionante.

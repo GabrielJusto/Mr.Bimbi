@@ -9,22 +9,20 @@ public class Catch : MonoBehaviour
     public GameObject pickUp;
 
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
+        if(player == null)
+            player = GameObject.Find("Butler");
         catched = false;
-        player = GameObject.Find("Butler");
-        pickUp = GameObject.Find("pickUp");
+        if(pickUp == null)
+            pickUp = GameObject.Find("pickUp");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (Mathf.Abs(transform.position.x - player.transform.position.x) < 1
             && Mathf.Abs(transform.position.y - player.transform.position.y) < 1
             && Input.GetKeyDown("z") && !catched)
